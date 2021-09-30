@@ -12,7 +12,7 @@ using Android.Provider;
 
 namespace SampleApp.Droid
 {
-    [Activity(Label = "XamarinReactNative", MainLauncher = true, Icon = "@mipmap/icon", Theme = "@style/Theme.AppCompat.Light.NoActionBar")]
+    [Activity(Label = "XRN", MainLauncher = true, Icon = "@mipmap/icon", Theme = "@style/Theme.AppCompat.Light.NoActionBar")]
     public class MainActivity : AppCompatActivity, IDefaultHardwareBackBtnHandler
     {
         ReactRootView mReactRootView;
@@ -25,14 +25,14 @@ namespace SampleApp.Droid
         {
             base.OnCreate(savedInstanceState);
 
-            if (Build.VERSION.SdkInt >= BuildVersionCodes.M)
-            {
-                if (!Settings.CanDrawOverlays(this))
-                {
-                    Intent intent = new Intent(Settings.ActionManageOverlayPermission, Uri.Parse("package:" + PackageName));
-                    StartActivityForResult(intent, OVERLAY_PERMISSION_REQ_CODE);
-                }
-            }
+            //if (Build.VERSION.SdkInt >= BuildVersionCodes.M)
+            //{
+            //    if (!Settings.CanDrawOverlays(this))
+            //    {
+            //        Intent intent = new Intent(Settings.ActionManageOverlayPermission, Uri.Parse("package:" + PackageName));
+            //        StartActivityForResult(intent, OVERLAY_PERMISSION_REQ_CODE);
+            //    }
+            //}
 
             mReactRootView = new ReactRootView(this);
             mReactInstanceManager = ReactInstanceManager.Builder()
