@@ -7,6 +7,12 @@ This example includes a working proof-of-concept for both *Xamarin.Android* and 
 #### So, why would you do that?
 This is mainly a proof-of-concept and a challange to make transitioning projects from Xamarin to react-native a lot easier.
 
+## Prerequisites
+1. 
+
+## Steps
+1. Open Terminal
+
 ## Integrate in your project
 To get startet just install the NuGet packages you need for your project. It depends on which project type you are dealing with. The version of the NuGet package indicates in which version of react-native is targeted. For example the version `1.0.**50**` targets react-native `^0.50.0`.
 
