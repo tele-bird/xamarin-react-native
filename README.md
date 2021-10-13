@@ -161,11 +161,12 @@ After you have done this, you can open the project `samples/SampleApp.sln` and d
 After checking out the project run the following commands:
 
 ```bash
-# inside of ./binding/ReactNative.Droid
+# inside of ./binding
 # install all node dependencies
 yarn install
 
 # build the android binding
+cd ReactNative.Droid
 make build
 ```
 

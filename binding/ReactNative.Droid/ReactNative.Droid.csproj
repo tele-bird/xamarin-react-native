@@ -11,7 +11,6 @@
     <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <AndroidClassParser>class-parse</AndroidClassParser>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -62,7 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <LibraryProjectZip Include="..\node_modules\react-native\android\com\facebook\react\react-native\0.55.3\react-native-0.55.3.aar">
-      <Link>Jars\react-native-0.54.1.aar</Link>
+      <Link>Jars\react-native-0.55.3.aar</Link>
     </LibraryProjectZip>
     <LibraryProjectZip Include="Jars\android-jsc-r174650.aar" />
   </ItemGroup>
