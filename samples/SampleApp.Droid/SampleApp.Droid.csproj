@@ -79,6 +79,7 @@
     </Reference>
     <Reference Include="ReactNative.Droid">
       <HintPath>..\..\binding\ReactNative.Droid\bin\Release\ReactNative.Droid.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>

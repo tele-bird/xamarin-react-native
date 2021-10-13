@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.OS;
 using Com.Facebook.React;
-using Com.Facebook.React.Shell;
+//using Com.Facebook.React.Shell;
 using Com.Facebook.React.Common;
 using Android.Views;
 using Com.Facebook.React.Modules.Core;

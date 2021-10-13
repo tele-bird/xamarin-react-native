@@ -17,7 +17,7 @@ const instructions = Platform.select({
   ios: 'Heres iOS,\n' +
     'Cmd+D or shake for dev menu',
   android: 'Heres Android,\n' +
-    'Shake or press menu button for dev menu',
+    'Shimmy or press menu button for dev menu',
 });
 
 class RNHelloWorld extends Component<{}> {

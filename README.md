@@ -167,11 +167,12 @@ After you have done this, you can open the project `samples/SampleApp.sln` and d
 After checking out the project run the following commands:
 
 ```bash
-# inside of ./binding/ReactNative.Droid
-# install all node dependencies
+# inside of ./binding
+# install all node dependencies - creates node_modules folder
 yarn install
 
 # build the android binding
+cd binding/ReactNative.Droid
 make build
 ```
 
@@ -180,7 +181,8 @@ This is recommended for release builds.
 
 ```bash
 # inside of ./binding/
-# bundle javascript to embeddable index.android
+cd ..
+# bundle javascript to embeddable index.android in the spot where SampleApp expects it
 yarn bundle-android
 ```
 
@@ -201,6 +203,7 @@ Open the react dev support menu and `Refresh` the view or `Enable hot reloading`
 After you have done this, you can open the project `samples/SampleApp.sln` and deploy it to a device or simulator.
 
 ## Known Issues
+* If you get: a 404 error with "Cannot GET /index.delta" in the embedded RN app, then it's because you're running another local server.  Shut it down and re-try. 
 * The precompiled `ReactNative.Droid` assembly references the `Square.Okio` package. This will cause build errors in the DEXer build step if you are using `modernhttpclient`. This is because `modernhttpclient` ships with its own prebundled version of `okhttp`.
     * **Workaround:** You have to compile `ReactNative.Droid` by yourself and remove the duplicated native references. Alternatively you can use a fork of `modernhttpclient` which does not embed its own version of `okhttp`.
 * The Android sample application does not initially load from the react packager. **Or is this the intended behavior?**
