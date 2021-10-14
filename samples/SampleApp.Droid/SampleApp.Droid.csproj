@@ -73,11 +73,11 @@
     <Reference Include="Xamarin.Android.Support.v7.AppCompat">
       <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.26.0.2\lib\MonoAndroid80\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
     </Reference>
-    <Reference Include="ReactNative.Droid">
-      <HintPath>..\..\binding\ReactNative.Droid\bin\Debug\ReactNative.Droid.dll</HintPath>
-    </Reference>
     <Reference Include="Square.OkIO">
       <HintPath>..\packages\Square.OkIO.1.13.0\lib\MonoAndroid\Square.OkIO.dll</HintPath>
+    </Reference>
+    <Reference Include="ReactNative.Droid">
+      <HintPath>..\..\binding\ReactNative.Droid\bin\Release\ReactNative.Droid.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
