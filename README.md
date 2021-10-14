@@ -8,12 +8,12 @@ This example includes a working proof-of-concept for both *Xamarin.Android* and 
 This is mainly a proof-of-concept and a challange to make transitioning projects from Xamarin to react-native a lot easier.
 
 ## Set up your React Native environment
-1. Follow: [reactnative.dev - Setting up the development environment](https://reactnative.dev/docs/environment-setup))
+1. Follow: [reactnative.dev - Setting up the development environment](https://reactnative.dev/docs/environment-setup)
     1. Important: Use the "React Native CLI Quickstart" tab (this project will not work without it)
 2. If you have more than one JDK installed, use .zshenv file to set JAVA_HOME environment.
     1. I used this version: 1.8.0_301 (x86_64) "Oracle Corporation" - "Java SE 8" /Library/Java/JavaVirtualMachines/jdk1.8.0_301.jdk/Contents/Home
-'''
-> phadley@KGM203453 xamarin-react-native % /usr/libexec/java_home -V
+````
+phadley@KGM203453 xamarin-react-native % /usr/libexec/java_home -V
 Matching Java Virtual Machines (4):
     14.0.1 (x86_64) "Oracle Corporation" - "Java SE 14.0.1" /Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home
     1.8.301.09 (x86_64) "Oracle Corporation" - "Java" /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home
@@ -21,7 +21,7 @@ Matching Java Virtual Machines (4):
     1.8.0_292 (x86_64) "AdoptOpenJDK" - "AdoptOpenJDK 8" /Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
 /Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home
 phadley@KGM203453 xamarin-react-native % 
-'''
+````
 
 ## Integrate in your project
 The NuGet package noted below has been discontinued by the author - that's why the ~strikethrough~ formatting.
