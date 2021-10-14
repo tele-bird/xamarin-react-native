@@ -30,7 +30,7 @@ namespace SampleApp.iOS
             //var url = NSBundle.MainBundle.GetUrlForResource("main", "jsbundle");
             var url = NSUrl.FromString("http://localhost:8081/index.bundle?platform=ios");
 
-            RCTRootView rootView = new RCTRootView(url, new NSString("MyReactNativeApp"), props, options);
+            RCTRootView rootView = new RCTRootView(url, new NSString("RNOldVersion"), props, options);
             var vc = new UIViewController();
             vc.View = rootView;
 

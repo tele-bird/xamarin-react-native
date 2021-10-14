@@ -84,6 +84,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/phadley/.android/build-cache/e0827c7d53559255f454c9117c5d30cf01804154/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="01f201f8a16c7438c9ee4c56139d01663f2cb0e4">
+        <dex dex="/Users/phadley/Projects/xamarin-react-native/binding/android/app/build/intermediates/pre-dexed/debug/classes_8a2ae9acb48cbda11155ba91f9a880972e720184.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/phadley/.android/build-cache/50dc9dfa237a5f61cbcf9c9f6688fad93a803596/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -189,6 +198,15 @@
         revision="27.0.3"
         sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
         <dex dex="/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_771fa9236bac58008e681d95ab6397c487dfa311.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/phadley/.android/build-cache/e0827c7d53559255f454c9117c5d30cf01804154/output/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/phadley/Projects/xamarin-react-native/binding/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_8c2db5258d21d7a2e78dcfb9493338624ab5ff51.jar" />
     </item>
 
 </items>

@@ -4,35 +4,44 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import {
   Platform,
   StyleSheet,
   Text,
-  View
+  TextInput,
+  View,
+  Button,
+  Alert
 } from 'react-native';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
+const messageFromInstructions = Platform.select({
+  ios: 'Message from Xamarin.iOS',
+  android: 'Message from Xamarin.Droid',
 });
+
+const messageToInstructions = Platform.select({
+  ios: 'Message to Xamarin.iOS',
+  android: 'Message to Xamarin.Droid',
+});
+
+const messageFromXamarin = "sample from";
+const messageToXamarin = "sample to";
 
 type Props = {};
 export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
         <Text style={styles.instructions}>
-          To get started, edit App.js
+          {messageFromInstructions}
         </Text>
+        <TextInput value={messageFromXamarin} />
         <Text style={styles.instructions}>
-          {instructions}
+          {messageToInstructions}
         </Text>
+        <TextInput value={messageToXamarin} />
+        <Button title="Press me" onPress={() => Alert.alert("Text was: " + {messageToXamarin})} />
       </View>
     );
   }

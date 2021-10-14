@@ -48,7 +48,7 @@ namespace SampleApp.Droid
                     .SetInitialLifecycleState(LifecycleState.Resumed)
                     .Build();
 
-            mReactRootView.StartReactApplication(mReactInstanceManager, "MyReactNativeApp", null);
+            mReactRootView.StartReactApplication(mReactInstanceManager, "RNOldVersion", null);
 
             SetContentView(mReactRootView);
         }

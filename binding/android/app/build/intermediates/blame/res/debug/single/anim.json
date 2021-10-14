@@ -1,25 +1,5 @@
 [
     {
-        "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
-        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
-    },
-    {
-        "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/anim/catalyst_fade_out.xml",
-        "source": "/Users/phadley/.android/build-cache/e035293d89c29305074d2574be2b9f4d7c88474c/output/res/anim/catalyst_fade_out.xml"
-    },
-    {
-        "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
-        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_popup_enter.xml"
-    },
-    {
-        "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_in.xml",
-        "source": "/Users/phadley/.android/build-cache/e035293d89c29305074d2574be2b9f4d7c88474c/output/res/anim/catalyst_push_up_in.xml"
-    },
-    {
-        "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
-        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_grow_fade_in_from_bottom.xml"
-    },
-    {
         "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
         "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_slide_in_bottom.xml"
     },
@@ -28,8 +8,8 @@
         "source": "/Users/phadley/.android/build-cache/e035293d89c29305074d2574be2b9f4d7c88474c/output/res/anim/catalyst_push_up_out.xml"
     },
     {
-        "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
-        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_fade_in.xml"
+        "merged": "/Users/phadley/Projects/xamarin-react-native/binding/android/app/build/intermediates/res/merged/debug/anim/catalyst_fade_in.xml",
+        "source": "/Users/phadley/.android/build-cache/e0827c7d53559255f454c9117c5d30cf01804154/output/res/anim/catalyst_fade_in.xml"
     },
     {
         "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
@@ -44,8 +24,12 @@
         "source": "/Users/phadley/.android/build-cache/e035293d89c29305074d2574be2b9f4d7c88474c/output/res/anim/catalyst_slide_down.xml"
     },
     {
-        "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
-        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_slide_out_bottom.xml"
+        "merged": "/Users/phadley/Projects/xamarin-react-native/binding/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/xamarin-react-native/binding/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_slide_out_top.xml"
     },
     {
         "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
@@ -54,6 +38,86 @@
     {
         "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
         "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/anim/catalyst_fade_out.xml",
+        "source": "/Users/phadley/.android/build-cache/e035293d89c29305074d2574be2b9f4d7c88474c/output/res/anim/catalyst_fade_out.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/xamarin-react-native/binding/android/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/xamarin-react-native/binding/android/app/build/intermediates/res/merged/debug/anim/catalyst_slide_down.xml",
+        "source": "/Users/phadley/.android/build-cache/e0827c7d53559255f454c9117c5d30cf01804154/output/res/anim/catalyst_slide_down.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/xamarin-react-native/binding/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_out.xml",
+        "source": "/Users/phadley/.android/build-cache/e0827c7d53559255f454c9117c5d30cf01804154/output/res/anim/catalyst_push_up_out.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_in.xml",
+        "source": "/Users/phadley/.android/build-cache/e035293d89c29305074d2574be2b9f4d7c88474c/output/res/anim/catalyst_push_up_in.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/xamarin-react-native/binding/android/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/xamarin-react-native/binding/android/app/build/intermediates/res/merged/debug/anim/catalyst_fade_out.xml",
+        "source": "/Users/phadley/.android/build-cache/e0827c7d53559255f454c9117c5d30cf01804154/output/res/anim/catalyst_fade_out.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/xamarin-react-native/binding/android/app/build/intermediates/res/merged/debug/anim/catalyst_slide_up.xml",
+        "source": "/Users/phadley/.android/build-cache/e0827c7d53559255f454c9117c5d30cf01804154/output/res/anim/catalyst_slide_up.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/xamarin-react-native/binding/android/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/xamarin-react-native/binding/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/xamarin-react-native/binding/android/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/xamarin-react-native/binding/android/app/build/intermediates/res/merged/debug/anim/catalyst_push_up_in.xml",
+        "source": "/Users/phadley/.android/build-cache/e0827c7d53559255f454c9117c5d30cf01804154/output/res/anim/catalyst_push_up_in.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/xamarin-react-native/binding/android/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/xamarin-react-native/binding/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/xamarin-react-native/binding/android/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/anim/abc_grow_fade_in_from_bottom.xml"
     },
     {
         "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/anim/catalyst_slide_up.xml",

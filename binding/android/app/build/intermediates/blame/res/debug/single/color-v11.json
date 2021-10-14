@@ -1,10 +1,18 @@
 [
     {
+        "merged": "/Users/phadley/Projects/xamarin-react-native/binding/android/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
         "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
         "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
     },
     {
         "merged": "/Users/phadley/Projects/RNOldVersion/android/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/Users/phadley/Projects/xamarin-react-native/binding/android/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
         "source": "/Users/phadley/.android/build-cache/ddf43331c0d46bef887cf4a6482194313f39d939/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
     }
 ]
