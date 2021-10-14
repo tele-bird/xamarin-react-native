@@ -8,7 +8,7 @@ This example includes a working proof-of-concept for both *Xamarin.Android* and 
 This is mainly a proof-of-concept and a challange to make transitioning projects from Xamarin to react-native a lot easier.
 
 ## Integrate in your project
-To get startet just install the NuGet packages you need for your project. It depends on which project type you are dealing with. The version of the NuGet package indicates in which version of react-native is targeted. For example the version `1.0.**50**` targets react-native `^0.50.0`.
+~To get startet just install the NuGet packages you need for your project. It depends on which project type you are dealing with. The version of the NuGet package indicates in which version of react-native is targeted. For example the version `1.0.**50**` targets react-native `^0.50.0`.~
 
 #### Xamarin.iOS and Xamarin.Droid
 * Xamarin.Droid - https://www.nuget.org/packages/ReactNative.Droid/
@@ -165,8 +165,10 @@ After checking out the project run the following commands:
 # install all node dependencies
 yarn install
 
-# build the android binding
+# switch to the Xamarin Droid binding directory
 cd ReactNative.Droid
+
+# build the android binding
 make build
 ```
 
