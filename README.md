@@ -24,18 +24,18 @@ phadley@KGM203453 xamarin-react-native %
 ````
 
 ## Integrate in your project
-The NuGet package noted below has been discontinued by the author - that's why the ~strikethrough~ formatting.
+The NuGet package noted below has been discontinued by the author - that's why the ~~strikethrough~~ formatting.
 
-~To get startet just install the NuGet packages you need for your project. It depends on which project type you are dealing with. The version of the NuGet package indicates in which version of react-native is targeted. For example the version `1.0.**50**` targets react-native `^0.50.0`.~
+~~To get started, just install the NuGet packages you need for your project. It depends on which project type you are dealing with. The version of the NuGet package indicates in which version of react-native is targeted. For example the version `1.0.**50**` targets react-native `^0.50.0`.~~
 
-#### ~Xamarin.iOS and Xamarin.Droid~
-* ~Xamarin.Droid - https://www.nuget.org/packages/ReactNative.Droid/~
-* ~Xamarin.iOS - https://www.nuget.org/packages/ReactNative.iOS/~
-* ~Xamarin.iOS for Debugging (see notes in 1. Getting your hands dirty) https://www.nuget.org/packages/ReactNative.iOS.Debug/~
+#### ~~Xamarin.iOS and Xamarin.Droid~~
+* ~~Xamarin.Droid - https://www.nuget.org/packages/ReactNative.Droid/~~
+* ~~Xamarin.iOS - https://www.nuget.org/packages/ReactNative.iOS/~~
+* ~~Xamarin.iOS for Debugging (see notes in 1. Getting your hands dirty) https://www.nuget.org/packages/ReactNative.iOS.Debug/~~
 
-#### ~Xamarin.Forms~
-* ~Xamarin.Forms.Droid - https://www.nuget.org/packages/ReactNative.Forms.Droid/~
-* ~Xamarin.Forms.iOS - https://www.nuget.org/packages/ReactNative.Forms.iOS/~
+#### ~~Xamarin.Forms~~
+* ~~Xamarin.Forms.Droid - https://www.nuget.org/packages/ReactNative.Forms.Droid/~~
+* ~~Xamarin.Forms.iOS - https://www.nuget.org/packages/ReactNative.Forms.iOS/~~
 
 (you can and should use the `ReactNative.iOS.Debug` package in exchange for `ReactNative.iOS` for debugging purposes)
 
