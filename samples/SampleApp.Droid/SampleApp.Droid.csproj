@@ -79,11 +79,14 @@
     <Reference Include="ReactNative.Droid">
       <HintPath>..\..\binding\ReactNative.Droid\bin\Release\ReactNative.Droid.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Android.Export" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReactNativeModule.cs" />
+    <Compile Include="ReactNativeModulePackage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -105,6 +108,12 @@
   <ItemGroup>
     <AndroidAsset Include="Assets\index.android.bundle" />
     <AndroidAsset Include="Assets\index.android.bundle.meta" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SampleApp.Common\SampleApp.Common.csproj">
+      <Project>{D5EB65FF-E42B-410C-8FE4-BFD155D17947}</Project>
+      <Name>SampleApp.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Annotations.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Annotations.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets')" />

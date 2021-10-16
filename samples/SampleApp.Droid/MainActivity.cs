@@ -40,6 +40,7 @@ namespace SampleApp.Droid
                     .SetBundleAssetName("index.android.bundle")
                     .SetJSMainModulePath("index")
                     .AddPackage(new MainReactPackage())
+                    .AddPackage(new ReactNativeModulePackage())
 #if DEBUG
                     .SetUseDeveloperSupport(true)
 #else
