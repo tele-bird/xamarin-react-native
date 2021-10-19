@@ -29,11 +29,11 @@ namespace SampleApp.Droid
             try
             {
                 Task.Delay(Int32.Parse(delay)).Wait();
-                successCallback.Invoke($"InvokeMeAsynchronousWithCallback: delay = [{delay}], arg = [{arg}]");
+                successCallback.Invoke(delay, arg);
             }
             catch (Exception exc)
             {
-                errorCallback.Invoke($"InvokeMeAsynchronousWithCallback caught an {exc.GetType().Name} with Message: {exc.Message}");
+                errorCallback.Invoke($"Caught a {exc.GetType().FullName}: {exc.Message}");
             }
         }
 
@@ -44,12 +44,16 @@ namespace SampleApp.Droid
             Console.WriteLine($"InvokeMeAsynchronousWithPromise: delay = [{delay}], arg = [{arg}]");
             try
             {
-                Task.Delay(Int32.Parse(delay)).Wait();
-                promise.Resolve($"InvokeMeAsynchronousWithPromise: delay = [{delay}], arg = [{arg}]");
+                int delayInt = Int32.Parse(delay);
+                Task.Delay(delayInt).Wait();
+                IWritableMap result = Arguments.CreateMap();
+                result.PutInt("delayInt", delayInt);
+                result.PutString("argString", arg);
+                promise.Resolve((Java.Lang.Object)result);
             }
             catch (Exception exc)
             {
-                promise.Reject($"InvokeMeAsynchronousWithPromise caught an {exc.GetType().Name}", exc.Message);
+                promise.Reject(new JSApplicationIllegalArgumentException($"Caught a {exc.GetType().FullName}: {exc.Message}"));
             }
         }
     }

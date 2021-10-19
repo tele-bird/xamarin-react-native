@@ -25,6 +25,7 @@ namespace SampleApp.Droid
         {
             base.OnCreate(savedInstanceState);
 
+            #region overlay permission request
             //if (Build.VERSION.SdkInt >= BuildVersionCodes.M)
             //{
             //    if (!Settings.CanDrawOverlays(this))
@@ -33,6 +34,7 @@ namespace SampleApp.Droid
             //        StartActivityForResult(intent, OVERLAY_PERMISSION_REQ_CODE);
             //    }
             //}
+            #endregion
 
             mReactRootView = new ReactRootView(this);
             mReactInstanceManager = ReactInstanceManager.Builder()

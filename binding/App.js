@@ -47,7 +47,7 @@ import XamarinModule from './XamarinModule';
          <Text style={styles.instructions}>{messageFromInstructions}</Text>
          <TextInput
            style={styles.inputoneline}
-           value={this.state.text}
+           value={this.state.receiveText}
            multiline
            onChangeText={(receiveText) => this.setState({ receiveText })}
            underlineColorAndroid="transparent"
@@ -62,11 +62,11 @@ import XamarinModule from './XamarinModule';
          />
          <Button
            title="Invoke Synchronous Without Response"
-           onPress={() => XamarinModule.InvokeMeSynchronous(this.state.sendText)}
+           onPress={() => InvokeSync(this.state.sendText)}
          />
          <Button
            title="Invoke Asynchronous With Delayed Callback"
-           onPress={() => XamarinModule.InvokeMeAsynchronousWithCallback(this.state.delay, this.state.sendText, (error) => Alert.alert("error", error), (success) => Alert.alert("success", success))}
+           onPress={() => InvokeAsyncWithCallback(this.state.delay, this.state.sendText) }
          />
          <Button
            title="Invoke Asynchronous With Delayed Promise"
@@ -85,14 +85,41 @@ import XamarinModule from './XamarinModule';
    }
  }
 
+  function InvokeSync(text) {
+    try {
+      var result = XamarinModule.InvokeMeSynchronous(text);
+    } catch(e) {
+      console.error(e);
+    }
+  }
+
+  function InvokeAsyncWithCallback(delay, text) {
+    try {
+      var result = XamarinModule.InvokeMeAsynchronousWithCallback(
+        delay, 
+        text, 
+        (error) => console.error(error), 
+        (delay, arg) => HandleSuccess("InvokeMeAsynchronousWithCallback: delay = [" + delay + "], arg = [" + arg + "]"))
+    } catch(e) {
+      console.error(e);
+    }
+  }
+
   async function InvokeAsyncWithPromise(delay, text) {
     try {
-      var messageFromXamarin = await XamarinModule.InvokeMeAsynchronousWithPromise(delay, text);
-      Alert.alert("success", messageFromXamarin);
+      var {
+        delayInt,
+        argString,
+      } = await XamarinModule.InvokeMeAsynchronousWithPromise(delay, text);
+      HandleSuccess("InvokeMeAsynchronousWithPromise: delay = [" + delayInt + "], arg = [" + argString + "]");
     } catch (e) {
-      // for some reason, the next line of code throws an exception: com.facebook.react.bridge.ReadableNativeMap cannot be cast to java.lang.String
-      //Alert.alert("error", e);
+      console.error(e);
     }
+  }
+
+  function HandleSuccess(message) {
+    Alert.alert("success", message);
+    //this.setState({ xamarinText: message });
   }
  
  const styles = StyleSheet.create({
