@@ -1,4 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<resources>
-	<string name="app_name">XamarinReactNative</string>
+﻿<resources>
+    <string name="app_name">XRN.Droid</string>
+    <string name="title_home">Home</string>
+    <string name="title_recipes">Recipes</string>
+    <string name="title_account">Account</string>
 </resources>

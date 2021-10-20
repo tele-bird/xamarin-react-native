@@ -5,14 +5,13 @@ using Com.Facebook.React.Shell;
 using Com.Facebook.React.Common;
 using Android.Views;
 using Com.Facebook.React.Modules.Core;
-using Android.Support.V7.App;
 using Android.Content;
-using Android.Net;
 using Android.Provider;
+using AndroidX.AppCompat.App;
 
 namespace SampleApp.Droid
 {
-    //[Activity(Label = "XamarinReactNative", MainLauncher = true, Icon = "@mipmap/icon", Theme = "@style/Theme.AppCompat.Light.NoActionBar")]
+    [Activity(Label = "XamarinReactNative", Icon = "@mipmap/icon", Theme = "@style/Theme.AppCompat.Light.NoActionBar")]
     public class ReactActivity : AppCompatActivity, IDefaultHardwareBackBtnHandler
     {
         ReactRootView mReactRootView;
