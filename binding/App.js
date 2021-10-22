@@ -37,7 +37,44 @@ import XamarinModule from './XamarinModule';
      super(props);
      this.state = { receiveText: "", sendText: "hello Xamarin", delay: "2000" };
    }
- 
+
+   invokeSync(text) {
+    try {
+      var result = XamarinModule.InvokeMeSynchronous(text);
+    } catch(e) {
+      console.error(e);
+    }
+  }
+
+  invokeAsyncWithCallback(delay, text) {
+    try {
+      var result = XamarinModule.InvokeMeAsynchronousWithCallback(
+        delay, 
+        text, 
+        (error) => console.error(error), 
+        (delay, arg) => this.handleSuccess("InvokeMeAsynchronousWithCallback: delay = [" + delay + "], arg = [" + arg + "]"))
+    } catch(e) {
+      console.error(e);
+    }
+  }
+
+  async invokeAsyncWithPromise(delay, text) {
+    try {
+      var {
+        delayInt,
+        argString,
+      } = await XamarinModule.InvokeMeAsynchronousWithPromise(delay, text);
+      this.handleSuccess("InvokeMeAsynchronousWithPromise: delay = [" + delayInt + "], arg = [" + argString + "]");
+    } catch (e) {
+      console.error(e);
+    }
+  }
+
+  handleSuccess(message) {
+    //Alert.alert("success", message);
+    this.setState({ receiveText: message });
+  }
+
    render() {
      return (
        <View style={styles.container}>
@@ -62,15 +99,15 @@ import XamarinModule from './XamarinModule';
          />
          <Button
            title="Invoke Synchronous Without Response"
-           onPress={() => InvokeSync(this.state.sendText)}
+           onPress={() => this.invokeSync(this.state.sendText)}
          />
          <Button
            title="Invoke Asynchronous With Delayed Callback"
-           onPress={() => InvokeAsyncWithCallback(this.state.delay, this.state.sendText) }
+           onPress={() => this.invokeAsyncWithCallback(this.state.delay, this.state.sendText) }
          />
          <Button
            title="Invoke Asynchronous With Delayed Promise"
-           onPress={() => InvokeAsyncWithPromise(this.state.delay, this.state.sendText)}
+           onPress={() => this.invokeAsyncWithPromise(this.state.delay, this.state.sendText)}
          />
          <Text
            style={styles.instructions}>Delay:</Text>
@@ -84,43 +121,6 @@ import XamarinModule from './XamarinModule';
      );
    }
  }
-
-  function InvokeSync(text) {
-    try {
-      var result = XamarinModule.InvokeMeSynchronous(text);
-    } catch(e) {
-      console.error(e);
-    }
-  }
-
-  function InvokeAsyncWithCallback(delay, text) {
-    try {
-      var result = XamarinModule.InvokeMeAsynchronousWithCallback(
-        delay, 
-        text, 
-        (error) => console.error(error), 
-        (delay, arg) => HandleSuccess("InvokeMeAsynchronousWithCallback: delay = [" + delay + "], arg = [" + arg + "]"))
-    } catch(e) {
-      console.error(e);
-    }
-  }
-
-  async function InvokeAsyncWithPromise(delay, text) {
-    try {
-      var {
-        delayInt,
-        argString,
-      } = await XamarinModule.InvokeMeAsynchronousWithPromise(delay, text);
-      HandleSuccess("InvokeMeAsynchronousWithPromise: delay = [" + delayInt + "], arg = [" + argString + "]");
-    } catch (e) {
-      console.error(e);
-    }
-  }
-
-  function HandleSuccess(message) {
-    Alert.alert("success", message);
-    //this.setState({ xamarinText: message });
-  }
  
  const styles = StyleSheet.create({
    container: {
