@@ -3,4 +3,9 @@
     <string name="title_home">Home</string>
     <string name="title_recipes">Recipes</string>
     <string name="title_account">Account</string>
+    <string name="react__response_label">React.Droid Response</string>
+    <string name="react_response_edittext_hint">(response from React will appear here)</string>
+    <string name="react_message_label">Message to React.Droid</string>
+    <string name="react_message_edittext_hint">(enter the message for React)</string>
+    <string name="navigate_to_react_button_text">Navigate to React</string>
 </resources>

@@ -7,18 +7,23 @@ namespace SampleApp.Droid
 {
     public class ReactNativeModule : ReactContextBaseJavaModule
     {
-        public ReactNativeModule(Android.Content.Context context)
+        public ReactNativeModule(Android.Content.Context context, ReactActivity reactActivity)
             : base(new ReactApplicationContext(context))
         {
+            ReactActivity = reactActivity;
         }
 
         public override string Name => "XamarinModule";
+
+        public ReactActivity ReactActivity { get; }
 
         [Export]
         [ReactMethod]
         public void InvokeMeSynchronous(string arg)
         {
             Console.WriteLine($"InvokeMeSynchronous: arg = [{arg}]");
+            ReactActivity.Finish();
+            ReactActivity.OverridePendingTransition(Resource.Animation.Side_in_left, Resource.Animation.Side_out_right);
         }
 
         [Export]

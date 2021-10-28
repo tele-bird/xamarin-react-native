@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -11,51 +12,28 @@ namespace SampleApp.Droid
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme")]
     public class MainActivity : AppCompatActivity
     {
+        Button navigateButton;
+        EditText reactMessage_EditText;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
-            BottomNavigationView navigation = FindViewById<BottomNavigationView>(Resource.Id.navigation);
-            navigation.ItemSelected += Navigation_ItemSelected;
+            navigateButton = FindViewById<Button>(Resource.Id.navigate_button);
+            navigateButton.Click += BtnNavigateToRN_Click;
 
-            LoadFragment(Resource.Id.navigation_home);
+            reactMessage_EditText = FindViewById<EditText>(Resource.Id.react_message);
         }
 
-        private void Navigation_ItemSelected(object sender, Google.Android.Material.Navigation.NavigationBarView.ItemSelectedEventArgs e)
+        private void BtnNavigateToRN_Click(object sender, System.EventArgs e)
         {
-            LoadFragment(e.Item.ItemId);
-        }
-
-        private void LoadFragment(int id)
-        {
-            AndroidX.Fragment.App.Fragment fragment = null;
-            switch (id)
-            {
-                case Resource.Id.navigation_home:
-                    fragment = HomeFragment.NewInstance();
-                    break;
-                case Resource.Id.navigation_recipes:
-                    fragment = RecipesFragment.NewInstance();
-                    break;
-                case Resource.Id.navigation_account:
-                    fragment = AccountFragment.NewInstance();
-                    break;
-            }
-            if (null != fragment)
-            {
-                SupportFragmentManager.BeginTransaction()
-                    .Replace(Resource.Id.content_frame, fragment)
-                    .Commit();
-            }
-        }
-
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
-        {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            var reactIntent = new Intent(this, typeof(ReactActivity));
+            Bundle reactActivityBundle = new Bundle();
+            reactActivityBundle.PutString("ReactActivityArgumentString", reactMessage_EditText.Text);
+            StartActivity(reactIntent, reactActivityBundle);
+            OverridePendingTransition(Resource.Animation.Side_in_right, Resource.Animation.Side_out_left);
         }
     }
 }

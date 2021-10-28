@@ -41,7 +41,7 @@ namespace SampleApp.Droid
                     .SetBundleAssetName("index.android.bundle")
                     .SetJSMainModulePath("index")
                     .AddPackage(new MainReactPackage())
-                    .AddPackage(new ReactNativeModulePackage())
+                    .AddPackage(new ReactNativeModulePackage(this))
 #if DEBUG
                     .SetUseDeveloperSupport(true)
 #else
@@ -50,9 +50,23 @@ namespace SampleApp.Droid
                     .SetInitialLifecycleState(LifecycleState.Resumed)
                     .Build();
 
-            mReactRootView.StartReactApplication(mReactInstanceManager, "RNOldVersion", null);
+            mReactRootView.StartReactApplication(mReactInstanceManager, "RNOldVersion", savedInstanceState);
 
             SetContentView(mReactRootView);
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            Finish();
+            OverridePendingTransition(Resource.Animation.Side_in_left, Resource.Animation.Side_out_right);
+            return true;
+        }
+
+
+        public override void OnBackPressed()
+        {
+            this.Finish();
+            OverridePendingTransition(Resource.Animation.Side_in_left, Resource.Animation.Side_out_right);
         }
 
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
@@ -99,17 +113,17 @@ namespace SampleApp.Droid
             }
         }
 
-        public override void OnBackPressed()
-        {
-            if (mReactInstanceManager != null)
-            {
-                mReactInstanceManager.OnBackPressed();
-            }
-            else
-            {
-                base.OnBackPressed();
-            }
-        }
+        //public override void OnBackPressed()
+        //{
+        //    if (mReactInstanceManager != null)
+        //    {
+        //        mReactInstanceManager.OnBackPressed();
+        //    }
+        //    else
+        //    {
+        //        base.OnBackPressed();
+        //    }
+        //}
 
         public void InvokeDefaultOnBackPressed()
         {

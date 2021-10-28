@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#1B3147</color>
     <color name="colorAccent">#3498db</color>
     <color name="splash_background">#FFFFFF</color>
+    <color name="edittext_foreground">#FFFFFF</color>
+    <color name="edittext_background">#000000</color>
 </resources>
